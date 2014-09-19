@@ -90,5 +90,21 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh --no-rehash)"
 
-# zsh syntax highlighting
+## some nice Zsh options
+
+# can just type name of directory to change to it, no "cd" needed. e.g. "~"
+setopt auto_cd
+
+# more extensive tab completion
+autoload -U compinit
+compinit
+
+# case insensitive tab completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# superglobs
+setopt extendedglob
+unsetopt caseglob
+
+# syntax highlighting
 source /Users/robb/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
