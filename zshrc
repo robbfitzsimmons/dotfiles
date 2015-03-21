@@ -91,6 +91,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh --no-rehash)"
 
 ## some nice Zsh options
+# nicer command history
+setopt share_history
 
 # can just type name of directory to change to it, no "cd" needed. e.g. "~"
 setopt auto_cd
