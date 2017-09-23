@@ -1,6 +1,9 @@
-machine api.heroku.com
-  login robbfitzsimmons@gmail.com
-  password bf69eed3-0f02-4d8a-b925-844efa6fb460
 machine code.heroku.com
   login robbfitzsimmons@gmail.com
   password bf69eed3-0f02-4d8a-b925-844efa6fb460
+machine api.heroku.com
+  login robbfitzsimmons@gmail.com
+  password a8bef91e-6ee6-4d7f-b906-44f6a21585fa
+machine git.heroku.com
+  login robbfitzsimmons@gmail.com
+  password a8bef91e-6ee6-4d7f-b906-44f6a21585fa
