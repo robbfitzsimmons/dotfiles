@@ -4,7 +4,6 @@ dotfiles
 Current dotfiles for OS X.
 
 * bundle: [Bundler](http://bundler.io/) configuration
-* gauth: [Google Authenticator](https://code.google.com/p/google-authenticator/) - for [Alfred](http://www.alfredapp.com/)
 * gnupg: [GPG](https://www.gnupg.org/) keys and configuration
 * netrc: logins for e.g. [Heroku](heroku.com)
 * ssh: [SSH](http://www.openssh.com/) keys and configuration
