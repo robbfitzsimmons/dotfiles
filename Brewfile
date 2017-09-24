@@ -43,7 +43,8 @@ cask "postgres", restart_service: true 	# PostgreSQL databases.
 ### Comment these out if you prefer something else.
 
 cask "1password"		                    # Password and other secure doc storage.
-cask "alfred"			                      # Alfred search interface.
+cask "alfred"			                      # Alternative file search / hotkeys.
+cask "basecamp"                         # Collaboration tool.
 cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
 cask "chatology"		                    # Save and search iMessage.
 cask "daisydisk"		                    # Hard drive visualization.
