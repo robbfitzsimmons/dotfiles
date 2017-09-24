@@ -109,4 +109,4 @@ setopt extendedglob
 unsetopt caseglob
 
 # syntax highlighting
-source /Users/robb/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
