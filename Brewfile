@@ -38,6 +38,9 @@ cask "iterm2" 	                        # The best console emulator.
 cask "keybase"		                      # Easy PGP-key file sharing.
 cask "postgres", restart_service: true 	# PostgreSQL databases.
 
+## CONVENIENCE AND HELPERS
+brew "speedtest-cli"                        # CLI for the Ookla network speed test.
+
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
 ### Comment these out if you prefer something else.
@@ -58,6 +61,7 @@ cask "optimal-layout"		                # Keyboard-based window manager.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
+cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
 cask "transmit"			                    # FTP and S3 client.
