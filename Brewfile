@@ -57,7 +57,6 @@ cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
 cask "little-snitch"		                # Incoming/outgoing request filter.
-cask "optimal-layout"		                # Keyboard-based window manager.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
@@ -71,6 +70,7 @@ cask "transmit"			                    # FTP and S3 client.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
 
+mas "divvy",      id: 413857545         # Keyboard-based window manager.
 mas "gemini",     id: 1090488118	      # Dedupes files and directories.
 mas "istat-mini", id: 927292435	        # Key stats in Notification Center.
 mas "tweetbot",   id: 557168941         # Twitter client.
