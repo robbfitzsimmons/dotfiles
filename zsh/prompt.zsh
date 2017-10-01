@@ -1,6 +1,4 @@
 autoload colors && colors
-# cheers, @ehrenmurdick
-# http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
 if (( $+commands[git] ))
 then
@@ -108,6 +106,3 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # superglobs
 setopt extendedglob
 unsetopt caseglob
-
-# syntax highlighting
-source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
