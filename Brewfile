@@ -2,7 +2,7 @@
 # Contains commonly-used applications when provisioning a new Mac.
 
 # Makes sure all casks are linked to /Applications, preventing config issues.
-cask_args appdir: "/Applications"
+cask_args appdir: "~/Applications"
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
@@ -18,6 +18,7 @@ brew "rbenv"		                        # Ruby version management.
 brew "redis"		                        # Redis in-memory data store.
 brew "zsh"		                          # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
+brew "zsh-syntax-highlighting"          # Colorize Zsh.
 
 ## [DATA] SCIENCE ENVIRONMENT
 
