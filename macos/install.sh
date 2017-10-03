@@ -132,14 +132,14 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 ###############################################################################
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+# sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
-sudo rm /private/var/vm/sleepimage
+# sudo rm /private/var/vm/sleepimage
 # Create a zero-byte file instead…
-sudo touch /private/var/vm/sleepimage
+# sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
-sudo chflags uchg /private/var/vm/sleepimage
+# sudo chflags uchg /private/var/vm/sleepimage
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -325,8 +325,8 @@ chflags nohidden ~/Library
 sudo chflags nohidden /Volumes
 
 # Remove Dropbox’s green checkmark icons in Finder
-file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
-[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
+# file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+# [ -e "${file}" ] && mv -f "${file}" "${file}.bak"
 
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
@@ -472,7 +472,7 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 
 # Remove useless icons from Safari’s bookmarks bar
-defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+# defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 # Enable the Develop menu and the Web Inspector in Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
@@ -530,7 +530,7 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 # Spotlight                                                                   #
 ###############################################################################
 # Hide Spotlight tray-icon (and subsequent helper)
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
@@ -647,7 +647,7 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 ###############################################################################
 # Enable the debug menu in Address Book
 # defaults write com.apple.addressbook ABShowDebugMenu -bool true
-Enable Dashboard dev mode (allows keeping widgets on the desktop)
+# Enable Dashboard dev mode (allows keeping widgets on the desktop)
 defaults write com.apple.dashboard devmode -bool true
 # Enable the debug menu in iCal (pre-10.8)
 # defaults write com.apple.iCal IncludeDebugMenu -bool true
