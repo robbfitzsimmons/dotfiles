@@ -1,0 +1,5 @@
+[user]
+        name = robbfitzsimmons
+        email = robb@linnaean.co
+[credential]
+        helper = osxkeychain
