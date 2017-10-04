@@ -2,7 +2,7 @@
 # Contains commonly-used applications when provisioning a new Mac.
 
 # Makes sure all casks are linked to /Applications, preventing config issues.
-cask_args appdir: "~/Applications"
+cask_args appdir: "/Applications"
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
@@ -71,6 +71,7 @@ cask "transmit"			                    # FTP and S3 client.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
 
+mas "deliveries", id: 924726344         # Package and shipment tracker.
 mas "divvy",      id: 413857545         # Keyboard-based window manager.
 mas "gemini",     id: 1090488118	      # Dedupes files and directories.
 mas "istat-mini", id: 927292435	        # Key stats in Notification Center.
