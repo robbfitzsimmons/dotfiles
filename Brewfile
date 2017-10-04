@@ -64,6 +64,7 @@ cask "postico"			                    # PostgreSQL database client.
 cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
+cask "tad"                              # CSV file viewer.
 cask "transmit"			                    # FTP and S3 client.
 
 ## MAC APP STORE APPS
