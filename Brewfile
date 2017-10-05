@@ -15,7 +15,7 @@ brew "node"		                          # Node JS runtime.
 brew "nvm"		                          # Node version manager.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "rbenv"		                        # Ruby version management.
-brew "redis"		                        # Redis in-memory data store.
+brew "redis"		                        # In-memory data store.
 brew "zsh"		                          # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
@@ -23,8 +23,15 @@ brew "zsh-syntax-highlighting"          # Colorize Zsh.
 ## [DATA] SCIENCE ENVIRONMENT
 
 tap "homebrew/science"                  # Common scientific computing resources.
+
 brew "r"                                # Rlang (command line).
 cask "rstudio"			                    # IDE for the R language.
+
+brew "python"                           # Python 2.x.
+brew "python3"                          # Python 3.x.
+brew "matplotlib"                       # Python plotting library.
+brew "scipy"                            # Python for scientific operations.
+brew "numpy"                            # Python for math operations.
 
 brew "docker"                           # Container management.
 cask "vagrant"                          # Virtual machine management.
@@ -60,6 +67,7 @@ cask "little-snitch"		                # Incoming/outgoing request filter.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
+cask "qgis"                             # GIS visualization client.
 cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
