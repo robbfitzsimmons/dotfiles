@@ -47,11 +47,12 @@ cask "keybase"		                      # Easy PGP-key file sharing.
 cask "postgres", restart_service: true 	# PostgreSQL databases.
 
 ## CONVENIENCE AND HELPERS
-brew "speedtest-cli"                        # CLI for the Ookla network speed test.
+brew "speedtest-cli"                    # CLI for the Ookla network speed test.
 
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
 ### Comment these out if you prefer something else.
+tap "buo/cask-upgrade"                  # CLI to check for outdated apps.
 
 cask "1password"		                    # Password and other secure doc storage.
 cask "alfred"			                      # Alternative file search / hotkeys.
