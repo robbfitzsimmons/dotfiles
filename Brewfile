@@ -53,7 +53,6 @@ cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
 cask "chatology"		                    # Save and search iMessage.
 cask "daisydisk"		                    # Hard drive visualization.
 cask "dropbox"			                    # File storage and sync.
-cask "fantastical"	 	                  # Calendar and reminders.
 cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
@@ -72,9 +71,11 @@ cask "transmit"			                    # FTP and S3 client.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
 
-mas "deliveries", id: 924726344         # Package and shipment tracker.
-mas "divvy",      id: 413857545         # Keyboard-based window manager.
-mas "gemini",     id: 1090488118	      # Dedupes files and directories.
-mas "istat-mini", id: 927292435	        # Key stats in Notification Center.
-mas "tweetbot",   id: 557168941         # Twitter client.
-mas "xscope",	    id: 889428659		      # Pixel sampler and hex code editor.
+mas "deliveries",  id: 924726344        # Package and shipment tracker.
+mas "divvy",       id: 413857545        # Keyboard-based window manager.
+mas "fantastical", id: 975937182        # Calendar and reminders.
+mas "gemini",      id: 1090488118	      # Dedupes files and directories.
+mas "istat-mini",  id: 927292435	      # Key stats in Notification Center.
+mas "tweetbot",    id: 557168941        # Twitter client.
+mas "ulysses",     id: 1225570693       # Prose text editor.
+mas "xscope",	     id: 889428659		    # Pixel sampler and hex code editor.
