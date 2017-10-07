@@ -84,7 +84,5 @@ mas "deliveries",  id: 924726344        # Package and shipment tracker.
 mas "divvy",       id: 413857545        # Keyboard-based window manager.
 mas "fantastical", id: 975937182        # Calendar and reminders.
 mas "gemini",      id: 1090488118	      # Dedupes files and directories.
-mas "istat-mini",  id: 927292435	      # Key stats in Notification Center.
 mas "tweetbot",    id: 557168941        # Twitter client.
-mas "ulysses",     id: 1225570693       # Prose text editor.
 mas "xscope",	     id: 889428659		    # Pixel sampler and hex code editor.
