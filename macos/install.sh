@@ -526,6 +526,8 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -stri
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # Disable automatic spell checking
 defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
+# Enable plugins for Mail.app
+defaults write com.apple.mail EnableBundles -bool true
 ###############################################################################
 # Spotlight                                                                   #
 ###############################################################################
