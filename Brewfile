@@ -85,4 +85,5 @@ mas "divvy",       id: 413857545        # Keyboard-based window manager.
 mas "fantastical", id: 975937182        # Calendar and reminders.
 mas "gemini",      id: 1090488118	      # Dedupes files and directories.
 mas "tweetbot",    id: 557168941        # Twitter client.
+mas "xcode",       id: 497799835        # Build Mac and iOS apps.
 mas "xscope",	     id: 889428659		    # Pixel sampler and hex code editor.
