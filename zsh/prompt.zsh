@@ -60,19 +60,53 @@ ruby_version() {
 rb_prompt() {
   if ! [[ -z "$(ruby_version)" ]]
   then
-    echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
+    echo "%{$fg_bold[red]%}rb-v$(ruby_version)%{$reset_color%} "
+  else
+    echo ""
+  fi
+}
+
+python_version() {
+  if (( $+commands[python3] ))
+  then
+    echo "$(python3 --version version | awk '{print $2}')"
+  else
+    echo ""$(python --version | awk '{print $2}')""
+  fi
+}
+
+py_prompt() {
+  if ! [[ -z "$(python_version)" ]]
+  then
+    echo "%{$fg_bold[green]%}py-v$(python_version)%{$reset_color%} "
+  else
+    echo ""
+  fi
+}
+
+node_version() {
+  if (( $+commands[node] ))
+  then
+    echo "$(node --version | awk '{print $1}')"
+  fi
+}
+
+node_prompt() {
+  if ! [[ -z "$(node_version)" ]]
+  then
+    echo "%{$fg_bold[yellow]%}js-$(node_version)%{$reset_color%} "
   else
     echo ""
   fi
 }
 
 directory_name(){
-  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+  echo "%{$fg_bold[blue]%}%1/%\/%{$reset_color%}"
 }
 
 export PROMPT=$'> '
 set_prompt () {
-  export RPROMPT="$(rb_prompt)| $(directory_name) | $(git_dirty)$(need_push)"
+  export RPROMPT="$(rb_prompt)| $(py_prompt)| $(node_prompt)| $(directory_name) | $(git_dirty)$(need_push)"
 }
 
 precmd() {
