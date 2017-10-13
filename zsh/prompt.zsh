@@ -121,6 +121,7 @@ export PATH="$PATH:/usr/local/lib/node_modules"
 source $(brew --prefix nvm)/nvm.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash zsh)"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ## some nice Zsh options
