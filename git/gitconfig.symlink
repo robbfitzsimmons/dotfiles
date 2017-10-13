@@ -31,3 +31,12 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+        
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Robb Fitzsimmons
+	email = robb@linnaean.co
