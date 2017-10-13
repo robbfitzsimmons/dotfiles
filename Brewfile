@@ -11,9 +11,11 @@ brew "awscli"		                        # CLI access to Amazon Web Services.
 brew "git"		                          # Version control.
 brew "gnupg"	                          # PGP encryption.
 brew "heroku"		                        # CLI access to Heroku.
+brew "monkeysphere"                     # Makes PGP keys usable for SSH.
 brew "node"		                          # Node JS runtime.
 brew "nvm"		                          # Node version manager.
 brew "openssl"	                        # TLS and SSL cryptography library.
+brew "openssh"                          # SSH secure server access.
 brew "rbenv"		                        # Ruby version management.
 brew "redis"		                        # In-memory data store.
 brew "zsh"		                          # Zshell, the best terminal.
