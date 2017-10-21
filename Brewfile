@@ -83,12 +83,13 @@ cask "transmit"			                    # FTP and S3 client.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
 
-mas "deliveries",  id: 924726344        # Package and shipment tracker.
-mas "cardhop",     id: 1290358394       # Address book contact manager.
-mas "divvy",       id: 413857545        # Keyboard-based window manager.
-mas "fantastical", id: 975937182        # Calendar and reminders manager.
-mas "gemini",      id: 1090488118	      # Dedupes files and directories.
-mas "scratchpad",  id: 1210167684       # Notepad in Notification center.
-mas "tweetbot",    id: 557168941        # Twitter client.
-mas "xcode",       id: 497799835        # Build Mac and iOS apps.
-mas "xscope",	     id: 889428659		    # Pixel sampler and hex code editor.
+mas "deliveries",     id: 924726344     # Package and shipment tracker.
+mas "cardhop",        id: 1290358394    # Address book contact manager.
+mas "divvy",          id: 413857545     # Keyboard-based window manager.
+mas "fantastical",    id: 975937182     # Calendar and reminders manager.
+mas "gemini",         id: 1090488118	  # Dedupes files and directories.
+mas "scratchpad",     id: 1210167684    # Notepad in Notification center.
+mas "tweetbot",       id: 557168941     # Twitter client.
+mas "wifi-explorer",  id: 494803304     # Information on wireless networks.
+mas "xcode",          id: 497799835     # Build Mac and iOS apps.
+mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
