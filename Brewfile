@@ -23,7 +23,7 @@ brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
 
 ## [DATA] SCIENCE ENVIRONMENT
-
+### Software specific to data science pipelines.
 tap "homebrew/science"                  # Common scientific computing resources.
 
 brew "r"                                # Rlang (command line).
@@ -50,6 +50,11 @@ cask "postgres", restart_service: true 	# PostgreSQL databases.
 
 ## CONVENIENCE AND HELPERS
 brew "speedtest-cli"                    # CLI for the Ookla network speed test.
+
+### QuickLook Plugins
+#### Extends the functionality of QuickLook (spacebar preview) for Finder.
+cask "quicklook-csv"                    # Preview CSV data files.
+cask "qlcolorcode"                      # Code syntax highlighting.
 
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
