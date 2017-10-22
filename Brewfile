@@ -93,6 +93,7 @@ mas "cardhop",        id: 1290358394    # Address book contact manager.
 mas "divvy",          id: 413857545     # Keyboard-based window manager.
 mas "fantastical",    id: 975937182     # Calendar and reminders manager.
 mas "gemini",         id: 1090488118	  # Dedupes files and directories.
+mas "ia-writer",      id: 775737590     # Plain text editor.
 mas "scratchpad",     id: 1210167684    # Notepad in Notification center.
 mas "tweetbot",       id: 557168941     # Twitter client.
 mas "wifi-explorer",  id: 494803304     # Information on wireless networks.
