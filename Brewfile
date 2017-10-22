@@ -49,6 +49,7 @@ cask "keybase"		                      # Easy PGP-key file sharing.
 cask "postgres", restart_service: true 	# PostgreSQL databases.
 
 ## CONVENIENCE AND HELPERS
+cask "gmvault"                          # CLI to archive / back up Gmail.
 brew "speedtest-cli"                    # CLI for the Ookla network speed test.
 cask "osxfuse"                          # Extend macOS file handling to S3.
 
