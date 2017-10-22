@@ -50,6 +50,7 @@ cask "postgres", restart_service: true 	# PostgreSQL databases.
 
 ## CONVENIENCE AND HELPERS
 brew "speedtest-cli"                    # CLI for the Ookla network speed test.
+cask "osxfuse"                          # Extend macOS file handling to S3.
 
 ### QuickLook Plugins
 #### Extends the functionality of QuickLook (spacebar preview) for Finder.
