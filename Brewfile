@@ -82,6 +82,7 @@ cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
 cask "tad"                              # CSV file viewer.
 cask "transmit"			                    # FTP and S3 client.
+cask "transmit-disk"                    # Mount FTP and S3 within Finder.
 
 ## MAC APP STORE APPS
 ### Install Apps previously purchased through the Mac App Store.
