@@ -10,6 +10,7 @@ cask_args appdir: "/Applications"
 brew "awscli"		                        # CLI access to Amazon Web Services.
 brew "git"		                          # Version control.
 brew "gnupg"	                          # PGP encryption.
+brew "go"                               # Go language.
 brew "heroku"		                        # CLI access to Heroku.
 brew "monkeysphere"                     # Makes PGP keys usable for SSH.
 brew "node"		                          # Node JS runtime.
@@ -29,12 +30,25 @@ tap "homebrew/science"                  # Common scientific computing resources.
 brew "r"                                # Rlang (command line).
 cask "rstudio"			                    # IDE for the R language.
 
+### Geospatial data-specific toolkit.
+tap "osgeo/osgeo4mac"                   # Brew formulas for geospatial toolkit.
+brew "proj"                             # Cartographic projections.
+brew "geos"                             # Geometry engine.
+brew "udunits"                          # Unit conversion.
+brew "gdal2",                           # Geospatial data abstraction.
+      args: ["with-armadillo",
+             "with-complete",
+             "with-libkml",
+             "with-unsupported"]
+
+### Python toolkit.
 brew "python"                           # Python 2.x.
 brew "python3"                          # Python 3.x.
 brew "matplotlib"                       # Python plotting library.
 brew "scipy"                            # Python for scientific operations.
 brew "numpy"                            # Python for math operations.
 
+### Virtual machine management / reproducibility / portability.
 brew "docker"                           # Container management.
 cask "vagrant"                          # Virtual machine management.
 cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
