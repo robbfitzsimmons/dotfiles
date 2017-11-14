@@ -115,14 +115,12 @@ precmd() {
 
 export PATH="$HOME/.bin:$PATH"
 
-# recommended by brew doctor
-export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:/usr/local/lib/node_modules"
-source $(brew --prefix nvm)/nvm.sh
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - --no-rehash zsh)"
-export PATH="/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH"
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export PATH="/usr/local/bin:$PATH" # Brew-installed packages added to PATH
+export PATH="$PATH:/usr/local/lib/node_modules" # NodeJS modules
+source $(brew --prefix nvm)/nvm.sh # Adds NVM packages
+export PATH="$HOME/.rbenv/bin:$PATH" # Ruby Gems managed by rbenv
+eval "$(rbenv init - --no-rehash zsh)" # rbenv environment maanger
+export "PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH" # Geospatial pkg
 
 ## some nice Zsh options
 # nicer command history
