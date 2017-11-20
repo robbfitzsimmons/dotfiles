@@ -89,6 +89,7 @@ cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
 cask "little-snitch"		                # Incoming/outgoing request filter.
+cask "mactex"                           # LaTeX typesetting system.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
