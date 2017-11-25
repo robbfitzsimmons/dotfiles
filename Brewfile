@@ -88,6 +88,7 @@ cask "dropbox"			                    # File storage and sync.
 cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
+cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		                # Incoming/outgoing request filter.
 cask "mactex"                           # LaTeX typesetting system.
 cask "paw"                              # HTTP(S) and REST client.
