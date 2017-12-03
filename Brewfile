@@ -1,9 +1,6 @@
 # Robb's Brewfile.
 # Contains commonly-used applications when provisioning a new Mac.
 
-# Makes sure all casks are linked to /Applications, preventing config issues.
-cask_args appdir: "/Applications"
-
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
 
@@ -49,7 +46,8 @@ brew "scipy"                            # Python for scientific operations.
 brew "numpy"                            # Python for math operations.
 
 ### Virtual machine management / reproducibility / portability.
-brew "docker"                           # Container management.
+cask "docker"                           # Container management.
+brew "docker-machine-parallels"         # Docker containers in Parallels VMs.
 cask "vagrant"                          # Virtual machine management.
 cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
