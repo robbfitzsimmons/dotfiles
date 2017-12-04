@@ -56,6 +56,7 @@ cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
 cask "atom"		                          # Extensible free text editor.
 cask "dash"		                          # Developer documentation.
+cask "fontforge"                        # Font editor (convert fonts).
 cask "iterm2" 	                        # The best console emulator.
 cask "keybase"		                      # Easy PGP-key file sharing.
 cask "postgres", restart_service: true 	# PostgreSQL databases.
