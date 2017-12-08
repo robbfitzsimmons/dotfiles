@@ -94,6 +94,7 @@ cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
 cask "qgis"                             # GIS visualization client.
+cask "quickbooks"                       # Wrapper for accounting web app.
 cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
