@@ -14,6 +14,7 @@ brew "node"		                          # Node JS runtime.
 brew "nvm"		                          # Node version manager.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "openssh"                          # SSH secure server access.
+brew "phantomjs"                        # Headless browser.
 brew "rbenv"		                        # Ruby version management.
 brew "redis"		                        # In-memory data store.
 brew "zsh"		                          # Zshell, the best terminal.
@@ -94,7 +95,7 @@ cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
 cask "qgis"                             # GIS visualization client.
-cask "quickbooks"                       # Wrapper for accounting web app.
+cask "quickbooks-online"                # Wrapper for accounting web app.
 cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
