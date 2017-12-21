@@ -18,7 +18,6 @@ brew "phantomjs"                        # Headless browser.
 brew "rbenv"		                        # Ruby version management.
 brew "redis"		                        # In-memory data store.
 brew "wget"                             # Retrieve content fron web servers.
-cask "xquartz"                          # X11 window system support for macOS.
 brew "zsh"		                          # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
@@ -92,7 +91,6 @@ cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		                # Incoming/outgoing request filter.
-cask "mactex"                           # LaTeX typesetting system.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
