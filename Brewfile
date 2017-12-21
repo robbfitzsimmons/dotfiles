@@ -17,6 +17,8 @@ brew "openssh"                          # SSH secure server access.
 brew "phantomjs"                        # Headless browser.
 brew "rbenv"		                        # Ruby version management.
 brew "redis"		                        # In-memory data store.
+brew "wget"                             # Retrieve content fron web servers.
+cask "xquartz"                          # X11 window system support for macOS.
 brew "zsh"		                          # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
