@@ -86,6 +86,7 @@ cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
 cask "chatology"		                    # Save and search iMessage.
 cask "daisydisk"		                    # Hard drive visualization.
 cask "dropbox"			                    # File storage and sync.
+cask "evernote"                         # Note and document storage.
 cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
