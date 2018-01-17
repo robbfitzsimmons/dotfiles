@@ -121,6 +121,7 @@ source $(brew --prefix nvm)/nvm.sh # Adds NVM packages
 export PATH="$HOME/.rbenv/bin:$PATH" # Ruby Gems managed by rbenv
 eval "$(rbenv init - --no-rehash zsh)" # rbenv environment maanger
 export "PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH" # Geospatial pkg
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # PostgreSQL utils
 
 ## some nice Zsh options
 # nicer command history
