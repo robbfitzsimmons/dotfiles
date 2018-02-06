@@ -92,6 +92,7 @@ cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		                # Incoming/outgoing request filter.
+cask "optimal-layout"                   # Keyboard-based window manager.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
@@ -112,7 +113,6 @@ brew "youtube-dl"                       # YouTube downloader CLI.
 
 mas "deliveries",     id: 924726344     # Package and shipment tracker.
 mas "cardhop",        id: 1290358394    # Address book contact manager.
-mas "divvy",          id: 413857545     # Keyboard-based window manager.
 mas "fantastical",    id: 975937182     # Calendar and reminders manager.
 mas "gemini",         id: 1090488118	  # Dedupes files and directories.
 mas "ia-writer",      id: 775737590     # Plain text editor.
