@@ -113,16 +113,26 @@ precmd() {
   set_prompt
 }
 
+## Setting PATH
 export PATH="$HOME/.bin:$PATH"
 
-export PATH="/usr/local/bin:$PATH" # Brew-installed packages added to PATH
-export PATH="/usr/local/sbin:$PATH" # Brew-installed packages needing sudo
-export PATH="$PATH:/usr/local/lib/node_modules" # NodeJS modules
-source $(brew --prefix nvm)/nvm.sh # Adds NVM packages
-export PATH="$HOME/.rbenv/bin:$PATH" # Ruby Gems managed by rbenv
-eval "$(rbenv init - --no-rehash zsh)" # rbenv environment maanger
-export "PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH" # Geospatial pkg
-export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # PostgreSQL utils
+# Brew-installed packages added to PATH
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH" # Bins needing sudo
+
+# Node / nvm
+export PATH="$PATH:/usr/local/lib/node_modules"
+source $(brew --prefix nvm)/nvm.sh
+
+# Ruby / rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - --no-rehash zsh)"
+
+# PostgreSQL bins
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# Geospatial-specific
+export PATH="/usr/local/opt/gdal2/bin:$PATH" # override Postgres.app GDAL bin
 
 ## some nice Zsh options
 # nicer command history
