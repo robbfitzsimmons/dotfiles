@@ -116,6 +116,7 @@ precmd() {
 export PATH="$HOME/.bin:$PATH"
 
 export PATH="/usr/local/bin:$PATH" # Brew-installed packages added to PATH
+export PATH="/usr/local/sbin:$PATH" # Brew-installed packages needing sudo
 export PATH="$PATH:/usr/local/lib/node_modules" # NodeJS modules
 source $(brew --prefix nvm)/nvm.sh # Adds NVM packages
 export PATH="$HOME/.rbenv/bin:$PATH" # Ruby Gems managed by rbenv
