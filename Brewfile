@@ -9,6 +9,7 @@ brew "git"		                          # Version control.
 brew "gnupg"	                          # PGP encryption.
 brew "go"                               # Go language.
 brew "heroku"		                        # CLI access to Heroku.
+brew "jq"                               # CLI JSON processor.
 brew "monkeysphere"                     # Makes PGP keys usable for SSH.
 brew "node"		                          # Node JS runtime.
 brew "nvm"		                          # Node version manager.
@@ -24,8 +25,6 @@ brew "zsh-syntax-highlighting"          # Colorize Zsh.
 
 ## [DATA] SCIENCE ENVIRONMENT
 ### Software specific to data science pipelines.
-tap "homebrew/science"                  # Common scientific computing resources.
-
 brew "r"                                # Rlang (command line).
 cask "rstudio"			                    # IDE for the R language.
 
@@ -58,7 +57,6 @@ cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
 cask "atom"		                          # Extensible free text editor.
 cask "dash"		                          # Developer documentation.
-cask "fontforge"                        # Font editor (convert fonts).
 cask "iterm2" 	                        # The best console emulator.
 cask "keybase"		                      # Easy PGP-key file sharing.
 cask "postgres", restart_service: true 	# PostgreSQL databases.
@@ -96,7 +94,6 @@ cask "optimal-layout"                   # Keyboard-based window manager.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
-cask "qgis"                             # GIS visualization client.
 cask "quickbooks-online"                # Wrapper for accounting web app.
 cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
@@ -121,3 +118,10 @@ mas "tweetbot",       id: 557168941     # Twitter client.
 mas "wifi-explorer",  id: 494803304     # Information on wireless networks.
 mas "xcode",          id: 497799835     # Build Mac and iOS apps.
 mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
+
+## FONTS
+### Sourced from https://github.com/caskroom/homebrew-fonts where available,
+### with licensed fonts sourced from a private Github repo.
+
+cask "font-montserrat"                  # Sans-serif header font.
+cask "font-nixie-one"                   # Typewriter-style font (Linnaean logo).
