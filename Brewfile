@@ -78,6 +78,7 @@ tap "buo/cask-upgrade"                  # CLI to check for outdated apps.
 
 cask "1password"		                    # Password and other secure doc storage.
 cask "alfred"			                      # Alternative file search / hotkeys.
+cask "arq"                              # Multi-destination backup client.
 cask "balsamiq-mockups"                 # Wireframing tool.
 cask "basecamp"                         # Collaboration tool.
 cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
@@ -99,6 +100,7 @@ cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
 cask "tad"                              # CSV file viewer.
+brew "tarsnap"                          # Online backups for the truly paranoid.
 cask "transmit"			                    # FTP and S3 client.
 cask "transmit-disk"                    # Mount FTP and S3 within Finder.
 brew "youtube-dl"                       # YouTube downloader CLI.
