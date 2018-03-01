@@ -68,8 +68,10 @@ cask "osxfuse"                          # Extend macOS file handling to S3.
 
 ### QuickLook Plugins
 #### Extends the functionality of QuickLook (spacebar preview) for Finder.
-cask "quicklook-csv"                    # Preview CSV data files.
 cask "qlcolorcode"                      # Code syntax highlighting.
+cask "qlmarkdown"                       # Preview Markdown files.
+cask "quicklook-csv"                    # Preview CSV data files.
+cask "quicklook-json"                   # Preview JSON data files.
 
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
@@ -86,6 +88,7 @@ cask "chatology"		                    # Save and search iMessage.
 cask "daisydisk"		                    # Hard drive visualization.
 cask "dropbox"			                    # File storage and sync.
 cask "evernote"                         # Note and document storage.
+cask "freeze"                           # Amazon Glacier client.
 cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
@@ -100,7 +103,6 @@ cask "shimo"                            # OpenVPN client.
 cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
 cask "tad"                              # CSV file viewer.
-brew "tarsnap"                          # Online backups for the truly paranoid.
 cask "transmit"			                    # FTP and S3 client.
 cask "transmit-disk"                    # Mount FTP and S3 within Finder.
 brew "youtube-dl"                       # YouTube downloader CLI.
@@ -116,6 +118,7 @@ mas "fantastical",    id: 975937182     # Calendar and reminders manager.
 mas "gemini",         id: 1090488118	  # Dedupes files and directories.
 mas "ia-writer",      id: 775737590     # Plain text editor.
 mas "scratchpad",     id: 1210167684    # Notepad in Notification center.
+mas "tabletool",      id: 1122008420    # Simple CSV editor.
 mas "tweetbot",       id: 557168941     # Twitter client.
 mas "wifi-explorer",  id: 494803304     # Information on wireless networks.
 mas "xcode",          id: 497799835     # Build Mac and iOS apps.
