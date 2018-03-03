@@ -15,6 +15,7 @@ brew "node"		                          # Node JS runtime.
 brew "nvm"		                          # Node version manager.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "openssh"                          # SSH secure server access.
+brew "pigz"                             # Parallelized gzip compression.
 brew "pv"                               # Pipe viewer; view progress.
 brew "phantomjs"                        # Headless browser.
 brew "rbenv"		                        # Ruby version management.
