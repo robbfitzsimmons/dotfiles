@@ -67,11 +67,9 @@ rb_prompt() {
 }
 
 python_version() {
-  if (( $+commands[python3] ))
+  if ! (( $+commands[python --version] ))
   then
-    echo "$(python3 --version version | awk '{print $2}')"
-  else
-    echo ""$(python --version | awk '{print $2}')""
+    echo "$(python --version | awk '{print $2}')"
   fi
 }
 
@@ -120,13 +118,16 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH" # Bins needing sudo
 
-# Node / nvm
-export PATH="$PATH:/usr/local/lib/node_modules"
-source $(brew --prefix nvm)/nvm.sh
-
 # Ruby / rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash zsh)"
+
+# Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# Node / nvm
+export PATH="$PATH:/usr/local/lib/node_modules"
+source $(brew --prefix nvm)/nvm.sh
 
 # PostgreSQL bins
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
