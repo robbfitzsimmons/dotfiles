@@ -132,9 +132,6 @@ source $(brew --prefix nvm)/nvm.sh
 # PostgreSQL bins
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
-# Geospatial-specific
-export PATH="/usr/local/opt/gdal2/bin:$PATH" # override Postgres.app GDAL bin
-
 ## some nice Zsh options
 # nicer command history
 setopt share_history
