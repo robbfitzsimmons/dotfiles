@@ -25,29 +25,18 @@ brew "zsh"		                          # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
 
-## [DATA] SCIENCE ENVIRONMENT
+## DATA SCIENCE ENVIRONMENT
 ### Software specific to data science pipelines.
+
 brew "r"                                # Rlang (command line).
 cask "rstudio"			                    # IDE for the R language.
-
-### Geospatial data-specific toolkit.
-tap "osgeo/osgeo4mac"                   # Brew formulas for geospatial toolkit.
-brew "proj"                             # Cartographic projections.
-brew "geos"                             # Geometry engine.
-brew "udunits"                          # Unit conversion.
-brew "gdal2",                           # Geospatial data abstraction.
-      args: ["with-armadillo",
-             "with-complete",
-             "with-libkml",
-             "with-unsupported"]
-
-### Python toolkit.
 brew "python"                           # Python 2.x.
 brew "python3"                          # Python 3.x.
 brew "matplotlib"                       # Python plotting library.
 brew "scipy"                            # Python for scientific operations.
 brew "numpy"                            # Python for math operations.
 
+## VIRTUAL MACHINES
 ### Virtual machine management / reproducibility / portability.
 cask "docker"                           # Container management.
 brew "docker-machine-parallels"         # Docker containers in Parallels VMs.
@@ -55,7 +44,7 @@ cask "vagrant"                          # Virtual machine management.
 cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
 ## DEVELOPER APPS
-### Software for developing software.
+### Software for making software.
 
 cask "atom"		                          # Extensible free text editor.
 cask "dash"		                          # Developer documentation.
@@ -106,7 +95,6 @@ cask "spotify"			                    # Streaming music client.
 cask "superduper"		                    # Bootable clones of your hard drive.
 cask "tad"                              # CSV file viewer.
 cask "transmit"			                    # FTP and S3 client.
-cask "transmit-disk"                    # Mount FTP and S3 within Finder.
 brew "youtube-dl"                       # YouTube downloader CLI.
 
 ## MAC APP STORE APPS
