@@ -5,6 +5,7 @@
 ### Common development environment dependencies.
 
 brew "awscli"		                        # CLI access to Amazon Web Services.
+brew "carthage"                         # Manage Swift dependencies.
 brew "git"		                          # Version control.
 brew "gnupg"	                          # PGP encryption.
 brew "go"                               # Go language.
@@ -54,6 +55,7 @@ cask "postgres", restart_service: true 	# PostgreSQL databases.
 
 ## CONVENIENCE AND HELPERS
 cask "gmvault"                          # CLI to archive / back up Gmail.
+brew "locateme"                         # CLI to retrieve machine's location.
 brew "speedtest-cli"                    # CLI for the Ookla network speed test.
 cask "osxfuse"                          # Extend macOS file handling to S3.
 
