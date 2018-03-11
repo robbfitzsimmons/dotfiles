@@ -1,41 +1,66 @@
 # Robb's Brewfile.
 # Contains commonly-used applications when provisioning a new Mac.
 
+## Taps
+tap "caskroom/cask"                     # GUI apps.
+tap "caskroom/versions"                 # Alternate versions of Casks.
+tap "caskroom/fonts"                    # Open-source / free font files.
+tap "buo/cask-upgrade"                  # CLI to check for outdated Casks.
+
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
 
-brew "awscli"		                        # CLI access to Amazon Web Services.
-brew "carthage"                         # Manage Swift dependencies.
+#### CLI / Shell
 brew "git"		                          # Version control.
 brew "gnupg"	                          # PGP encryption.
-brew "go"                               # Go language.
-brew "heroku"		                        # CLI access to Heroku.
-brew "jq"                               # CLI JSON processor.
 brew "monkeysphere"                     # Makes PGP keys usable for SSH.
-brew "node"		                          # Node JS runtime.
-brew "nvm"		                          # Node version manager.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "openssh"                          # SSH secure server access.
 brew "pigz"                             # Parallelized gzip compression.
 brew "pv"                               # Pipe viewer; view progress.
-brew "phantomjs"                        # Headless browser.
-brew "rbenv"		                        # Ruby version management.
-brew "redis"		                        # In-memory data store.
 brew "wget"                             # Retrieve content fron web servers.
 brew "zsh"		                          # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
 
-## DATA SCIENCE ENVIRONMENT
-### Software specific to data science pipelines.
+#### DevOps
+brew "awscli"		                        # CLI access to Amazon Web Services.
+brew "heroku"		                        # CLI access to Heroku.
 
-brew "r"                                # Rlang (command line).
-cask "rstudio"			                    # IDE for the R language.
-brew "python"                           # Python 2.x.
-brew "python3"                          # Python 3.x.
-brew "matplotlib"                       # Python plotting library.
+#### Go
+brew "go"                               # Go language.
+
+#### JavaScript
+brew "node"		                          # Node JS runtime.
+brew "nvm"		                          # Node version manager.
+brew "jq"                               # CLI JSON processor.
+
+#### Python
+brew "python2"                          # Python 2.x.
+brew "python"                           # Python 3.x.
 brew "scipy"                            # Python for scientific operations.
 brew "numpy"                            # Python for math operations.
+
+#### Ruby
+brew "rbenv"		                        # Ruby version management.
+
+#### Databases
+brew "mysql"                            # MySQL (and ODBC drivers for MySQL).
+cask "postgres",                       	# PostgreSQL GUI and CLI tools,
+  restart_service: :changed             # plus PostGIS functionality.
+brew "redis"		                        # In-memory data store.
+brew "unixodbc"                         # Open database connectivity drivers.
+  brew "freetds",                       # Microsoft SQL Server driver.
+    args: ["with-unixodbc"]
+  brew "psqlodbc"                       # PostgreSQL ODBC driver.
+  brew "sqliteodbc"                     # SQLite ODBC driver.
+
+#### R
+brew "r"                                # R language (command line support).
+cask "rstudio-preview"			            # IDE for the R language.
+
+#### Swift
+brew "carthage"                         # Manage Swift dependencies.
 
 ## VIRTUAL MACHINES
 ### Virtual machine management / reproducibility / portability.
@@ -46,12 +71,10 @@ cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
 ## DEVELOPER APPS
 ### Software for making software.
-
 cask "atom"		                          # Extensible free text editor.
 cask "dash"		                          # Developer documentation.
 cask "iterm2" 	                        # The best console emulator.
 cask "keybase"		                      # Easy PGP-key file sharing.
-cask "postgres", restart_service: true 	# PostgreSQL databases.
 
 ## CONVENIENCE AND HELPERS
 cask "gmvault"                          # CLI to archive / back up Gmail.
@@ -68,12 +91,10 @@ cask "quicklook-json"                   # Preview JSON data files.
 
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
-### Comment these out if you prefer something else.
-tap "buo/cask-upgrade"                  # CLI to check for outdated apps.
-
-cask "1password"		                    # Password and other secure doc storage.
+cask "1password-beta"		                # Password and other secure doc storage.
+cask "adobe-creative-cloud"             # Adobe (Photoshop, Illustrator, etc.)
 cask "alfred"			                      # Alternative file search / hotkeys.
-cask "arq"                              # Multi-destination backup client.
+cask "backblaze"                        # Cloud backup GUI.
 cask "balsamiq-mockups"                 # Wireframing tool.
 cask "basecamp"                         # Collaboration tool.
 cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
@@ -87,6 +108,7 @@ cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		                # Incoming/outgoing request filter.
+brew "nativefier"                       # Create Electron apps from URLs.
 cask "optimal-layout"                   # Keyboard-based window manager.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
@@ -103,6 +125,7 @@ brew "youtube-dl"                       # YouTube downloader CLI.
 ### Install Apps previously purchased through the Mac App Store.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
+brew "mas"                              # Mac App Store formulas for brew.
 
 mas "deliveries",     id: 924726344     # Package and shipment tracker.
 mas "cardhop",        id: 1290358394    # Address book contact manager.
@@ -119,6 +142,5 @@ mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
 ## FONTS
 ### Sourced from https://github.com/caskroom/homebrew-fonts where available,
 ### with licensed fonts sourced from a private Github repo.
-
 cask "font-montserrat"                  # Sans-serif header font.
 cask "font-nixie-one"                   # Typewriter-style font (Linnaean logo).
