@@ -15,7 +15,10 @@ brew "git"		                          # Version control.
 brew "gnupg"	                          # PGP encryption.
 brew "monkeysphere"                     # Makes PGP keys usable for SSH.
 brew "openssl"	                        # TLS and SSL cryptography library.
+brew "moreutils",                       # Additional coreutil-type Unix utils
+  args: ["without-parallel"]            # (avoid conflict with GNU parallel)
 brew "openssh"                          # SSH secure server access.
+brew "parallel"                         # Run shell processes in parallel.
 brew "pigz"                             # Parallelized gzip compression.
 brew "pv"                               # Pipe viewer; view progress.
 brew "wget"                             # Retrieve content fron web servers.
