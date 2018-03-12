@@ -33,6 +33,10 @@ brew "heroku"		                        # CLI access to Heroku.
 #### Go
 brew "go"                               # Go language.
 
+#### Geospatial
+brew "geos"                             # Geometry engine for simple features.
+brew "udunits"                          # Conversion of physical units measures.
+
 #### JavaScript
 brew "node"		                          # Node JS runtime.
 brew "nvm"		                          # Node version manager.
