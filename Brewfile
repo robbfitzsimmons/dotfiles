@@ -114,6 +114,7 @@ cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
+cask "lumen"                            # Adjusts brightness for screen content.
 cask "little-snitch"		                # Incoming/outgoing request filter.
 brew "nativefier"                       # Create Electron apps from URLs.
 cask "optimal-layout"                   # Keyboard-based window manager.
