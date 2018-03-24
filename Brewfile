@@ -151,5 +151,6 @@ mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
 ### Sourced from https://github.com/caskroom/homebrew-fonts where available,
 ### with licensed fonts sourced from a private Github repo.
 brew "freetype"                         # Font rendering library.
+cask "font-courier-prime-code"          # Courier monospace font.
 cask "font-montserrat"                  # Sans-serif header font.
 cask "font-nixie-one"                   # Typewriter-style font (Linnaean logo).
