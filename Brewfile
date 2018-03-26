@@ -11,8 +11,9 @@ tap "buo/cask-upgrade"                  # CLI to check for outdated Casks.
 ### Common development environment dependencies.
 
 #### CLI / Shell
-brew "git"		                          # Version control.
-brew "gnupg"	                          # PGP encryption.
+brew "automake"							# Makefiles.
+brew "git"		                        # Version control.
+brew "gnupg"	                        # PGP encryption.
 brew "monkeysphere"                     # Makes PGP keys usable for SSH.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "moreutils",                       # Additional coreutil-type Unix utils
@@ -22,13 +23,13 @@ brew "parallel"                         # Run shell processes in parallel.
 brew "pigz"                             # Parallelized gzip compression.
 brew "pv"                               # Pipe viewer; view progress.
 brew "wget"                             # Retrieve content fron web servers.
-brew "zsh"		                          # Zshell, the best terminal.
+brew "zsh"		                        # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
 
 #### DevOps
-brew "awscli"		                        # CLI access to Amazon Web Services.
-brew "heroku"		                        # CLI access to Heroku.
+brew "awscli"		                    # CLI access to Amazon Web Services.
+brew "heroku"		                    # CLI access to Heroku.
 
 #### Go
 brew "go"                               # Go language.
@@ -38,8 +39,8 @@ brew "geos"                             # Geometry engine for simple features.
 brew "udunits"                          # Conversion of physical units measures.
 
 #### JavaScript
-brew "node"		                          # Node JS runtime.
-brew "nvm"		                          # Node version manager.
+brew "node"		                        # Node JS runtime.
+brew "nvm"		                        # Node version manager.
 brew "jq"                               # CLI JSON processor.
 
 #### Python
@@ -49,13 +50,13 @@ brew "scipy"                            # Python for scientific operations.
 brew "numpy"                            # Python for math operations.
 
 #### Ruby
-brew "rbenv"		                        # Ruby version management.
+brew "rbenv"		                    # Ruby version management.
 
 #### Databases
 brew "mysql"                            # MySQL (and ODBC drivers for MySQL).
 cask "postgres",                       	# PostgreSQL GUI and CLI tools,
   restart_service: :changed             # plus PostGIS functionality.
-brew "redis"		                        # In-memory data store.
+brew "redis"		                    # In-memory data store.
 brew "unixodbc"                         # Open database connectivity drivers.
   brew "freetds",                       # Microsoft SQL Server driver.
     args: ["with-unixodbc"]
@@ -64,7 +65,7 @@ brew "unixodbc"                         # Open database connectivity drivers.
 
 #### R
 brew "r"                                # R language (command line support).
-cask "rstudio-preview"			            # IDE for the R language.
+cask "rstudio-preview"			        # IDE for the R language.
 
 #### Swift
 brew "carthage"                         # Manage Swift dependencies.
@@ -78,10 +79,10 @@ cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
 ## DEVELOPER APPS
 ### Software for making software.
-cask "atom"		                          # Extensible free text editor.
-cask "dash"		                          # Developer documentation.
+cask "atom"		                        # Extensible free text editor.
+cask "dash"		                        # Developer documentation.
 cask "iterm2" 	                        # The best console emulator.
-cask "keybase"		                      # Easy PGP-key file sharing.
+cask "keybase"		                    # Easy PGP-key file sharing.
 
 ## CONVENIENCE AND HELPERS
 cask "gmvault"                          # CLI to archive / back up Gmail.
