@@ -154,5 +154,6 @@ mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
 ### with licensed fonts sourced from a private Github repo.
 brew "freetype"                         # Font rendering library.
 cask "font-courier-prime-code"          # Courier monospace font.
+cask "font-hasklig"                     # Source Sans fork with ligatures.
 cask "font-montserrat"                  # Sans-serif header font.
 cask "font-nixie-one"                   # Typewriter-style font (Linnaean logo).
