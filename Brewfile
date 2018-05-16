@@ -109,6 +109,7 @@ cask "basecamp"                         # Collaboration tool.
 cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
 cask "chatology"		                    # Save and search iMessage.
 cask "daisydisk"		                    # Hard drive visualization.
+cask "dialpad"                          # VoIP phone system.
 cask "dropbox"			                    # File storage and sync.
 cask "evernote"                         # Note and document storage.
 cask "freeze"                           # Amazon Glacier client.
