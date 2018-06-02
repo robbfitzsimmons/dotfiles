@@ -75,6 +75,7 @@ brew "carthage"                         # Manage Swift dependencies.
 ### Virtual machine management / reproducibility / portability.
 cask "docker"                           # Container management.
 brew "docker-machine-parallels"         # Docker containers in Parallels VMs.
+brew "packer"                           # Container -> image workflow tool.
 cask "vagrant"                          # Virtual machine management.
 cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
