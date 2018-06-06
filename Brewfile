@@ -81,10 +81,10 @@ cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
 ## DEVELOPER APPS
 ### Software for making software.
-cask "atom"		                          # Extensible free text editor.
 cask "dash"		                          # Developer documentation.
 cask "iterm2" 	                        # The best console emulator.
 cask "keybase"		                      # Easy PGP-key file sharing.
+cask "sublime-text"                     # Text editor.
 
 ## CONVENIENCE AND HELPERS
 cask "gmvault"                          # CLI to archive / back up Gmail.
