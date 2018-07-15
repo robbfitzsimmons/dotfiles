@@ -121,7 +121,6 @@ cask "kaleidoscope"                     # File diffing tool.
 cask "lumen"                            # Adjusts brightness for screen content.
 cask "little-snitch"		                # Incoming/outgoing request filter.
 brew "nativefier"                       # Create Electron apps from URLs.
-cask "optimal-layout"                   # Keyboard-based window manager.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels-desktop"	              # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
@@ -139,17 +138,18 @@ brew "youtube-dl"                       # YouTube downloader CLI.
 ### the MAS setup can't be run for the first time within the Brewfile.
 brew "mas"                              # Mac App Store formulas for brew.
 
-mas "deliveries",     id: 924726344     # Package and shipment tracker.
 mas "cardhop",        id: 1290358394    # Address book contact manager.
+mas "deliveries",     id: 924726344     # Package and shipment tracker.
+mas "divvy", 		  id: 413857545		# Tiling window manager
 mas "fantastical",    id: 975937182     # Calendar and reminders manager.
-mas "gemini",         id: 1090488118	  # Dedupes files and directories.
+mas "gemini",         id: 1090488118	# Dedupes files and directories.
 mas "ia-writer",      id: 775737590     # Plain text editor.
 mas "scratchpad",     id: 1210167684    # Notepad in Notification center.
 mas "tabletool",      id: 1122008420    # Simple CSV editor.
 mas "tweetbot",       id: 557168941     # Twitter client.
 mas "wifi-explorer",  id: 494803304     # Information on wireless networks.
 mas "xcode",          id: 497799835     # Build Mac and iOS apps.
-mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
+mas "xscope",	      id: 889428659		# Pixel sampler and hex code editor.
 
 ## FONTS
 ### Sourced from https://github.com/caskroom/homebrew-fonts where available,
