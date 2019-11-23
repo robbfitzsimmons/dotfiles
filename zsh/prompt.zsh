@@ -45,27 +45,6 @@ need_push () {
   fi
 }
 
-ruby_version() {
-  if (( $+commands[rbenv] ))
-  then
-    echo "$(rbenv version | awk '{print $1}')"
-  fi
-
-  if (( $+commands[rvm-prompt] ))
-  then
-    echo "$(rvm-prompt | awk '{print $1}')"
-  fi
-}
-
-rb_prompt() {
-  if ! [[ -z "$(ruby_version)" ]]
-  then
-    echo "%{$fg_bold[red]%}rb-v$(ruby_version)%{$reset_color%} "
-  else
-    echo ""
-  fi
-}
-
 python_version() {
   if ! (( $+commands[python --version] ))
   then
@@ -74,25 +53,28 @@ python_version() {
 }
 
 py_prompt() {
-  if ! [[ -z "$(python_version)" ]]
-  then
-    echo "%{$fg_bold[green]%}py-v$(python_version)%{$reset_color%} "
+  if [[ -n "${VIRTUAL_ENV+1}" ]]; then
+    # Strip out the path and just leave the env name
+    venv="${VIRTUAL_ENV##*/}"
+    echo "%{$fg_bold[green]%}py $venv%{$reset_color%} "
+  elif ! [[ -z "$(python_version)" ]]; then
+    echo "%{$fg_bold[green]%}py $(python_version)%{$reset_color%} "
   else
     echo ""
   fi
 }
 
-node_version() {
-  if (( $+commands[node] ))
+r_version(){
+  if ! (( $+commands[R --version] ))
   then
-    echo "$(node --version | awk '{print $1}')"
+    echo "$(R --version | awk 'NR== 1{print $3}')"
   fi
 }
 
-node_prompt() {
-  if ! [[ -z "$(node_version)" ]]
+r_prompt(){
+  if ! [[ -z "$(r_version)" ]]
   then
-    echo "%{$fg_bold[yellow]%}js-$(node_version)%{$reset_color%} "
+    echo "%{$fg_bold[yellow]%}R $(r_version)%{$reset_color%} "
   else
     echo ""
   fi
@@ -104,7 +86,7 @@ directory_name(){
 
 export PROMPT=$'> '
 set_prompt () {
-  export RPROMPT="$(rb_prompt)| $(py_prompt)| $(node_prompt)| $(directory_name) | $(git_dirty)$(need_push)"
+  export RPROMPT="$(py_prompt)| $(r_prompt)| $(directory_name) | $(git_dirty)$(need_push)"
 }
 
 precmd() {
