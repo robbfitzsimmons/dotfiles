@@ -58,8 +58,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 
-# Pyenv and pyenv-virtualenv support
+# Pyenv, pyenv-virtualenv, pipx support
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+eval "$(register-python-argcomplete pipx)"
 
+# Created by `userpath` on 2020-03-07 02:56:01
+export PATH="$PATH:/Users/robb/.local/bin"

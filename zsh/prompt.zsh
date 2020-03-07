@@ -56,7 +56,7 @@ py_prompt() {
   if [[ -n "${VIRTUAL_ENV+1}" ]]; then
     # Strip out the path and just leave the env name
     venv="${VIRTUAL_ENV##*/}"
-    echo "%{$fg_bold[green]%}py $venv%{$reset_color%} "
+    echo "%{$fg_bold[green]%}py $(python_version)@$venv%{$reset_color%} "
   elif ! [[ -z "$(python_version)" ]]; then
     echo "%{$fg_bold[green]%}py $(python_version)%{$reset_color%} "
   else
